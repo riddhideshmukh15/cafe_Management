@@ -1,26 +1,39 @@
 # ☕ Cafe Management System
 
-A simple Python console-based Cafe Management System that allows users to order food items from a menu and calculates the total bill.
+A simple **Cafe Management System built using Python**.
+This project allows customers to view the menu, order multiple items, select quantities, and calculate the final bill.
 
 ## 📌 Features
 
-- 📋 Displays the cafe menu
-- 🍕 Order food items
-- ➕ Add another item to the order
-- 💰 Calculates the total bill
-- ❌ Handles unavailable menu items
+* Display cafe menu
+* Order multiple food items
+* Select quantity for each item
+* Calculate item-wise prices
+* Calculate total bill
+* Calculate 5% GST
+* Display a final bill
+* User-friendly command-line interface
 
 ## 🛠️ Technologies Used
 
-- Python 3
+* **Python**
+* Dictionary
+* `if-else` statements
+* `while` loop
+* `input()` function
+* String methods
+* Basic calculations
 
-## 📂 Project Structure
+## 🍔 Menu
 
-```
-cafe_Management/
-│── cafe management.py
-│── README.md
-```
+| Item   | Price |
+| ------ | ----: |
+| Pizza  |   ₹40 |
+| Pasta  |   ₹60 |
+| Burger |   ₹40 |
+| Salad  |   ₹50 |
+| Coffee |   ₹80 |
+| Tea    |   ₹30 |
 
 ## ▶️ How to Run
 
@@ -36,59 +49,72 @@ git clone https://github.com/riddhideshmukh15/cafe_Management.git
 cd cafe_Management
 ```
 
-3. Run the program:
+3. Run the Python program:
 
 ```bash
-python "cafe management.py"
+python cafe_management.py
 ```
 
-## 🍽️ Menu
+## 💻 Example
 
-| Item | Price |
-|------|------:|
-| Pizza | ₹40 |
-| Pasta | ₹60 |
-| Burger | ₹40 |
-| Salad | ₹50 |
-| Coffee | ₹80 |
-| Tea | ₹30 |
+```text
+================================
+   Welcome to Riddhi's Restaurant
+================================
 
-## 💻 Sample Output
+----- MENU -----
+Pizza      Rs.40
+Pasta      Rs.60
+Burger     Rs.40
+Salad      Rs.50
+Coffee     Rs.80
+Tea        Rs.30
 
+Enter the item you want to order: pizza
+Enter quantity: 2
+
+2 pizza(s) added to your order.
+
+==============================
+          YOUR BILL
+==============================
+Pizza      x 2 = Rs.80
+------------------------------
+Subtotal: Rs.80
+GST (5%): Rs.4.00
+Total: Rs.84.00
+==============================
+Thank you for visiting!
 ```
-Welcome to Riddhi's Restaurant
 
-Pizza: Rs40
-Pasta: Rs60
-Burger: Rs40
-Salad: Rs50
-Coffee: Rs80
-Tea: Rs30
+## 📚 What I Learned
 
-Enter the name of item you want to order: pizza
-Your item pizza has been added to your order.
+Through this project, I practiced:
 
-Do you want to add another item? (yes/no): yes
-
-Enter the name of second item: tea
-Item tea has been added to order.
-
-The total amount of items to pay is Rs 70
-```
+* Python dictionaries
+* Loops
+* Conditional statements
+* User input
+* String formatting
+* Calculations
+* Building a menu-driven application
+* Using Git and GitHub
 
 ## 🚀 Future Improvements
 
-- Order multiple items using loops
-- Generate a detailed bill
-- Add quantity selection
-- Store customer orders in a file
-- Build a GUI using Tkinter
-- Connect with a database
+I plan to improve this project by adding:
+
+* Add/remove items from the order
+* Customer name
+* Order number
+* Discount system
+* Save orders to a file
+* Tkinter GUI
+* SQLite database
+* Admin panel
 
 ## 👩‍💻 Author
 
 **Riddhi Deshmukh**
 
----
-
-⭐ If you found this project useful, consider giving it a star!
+This is one of my beginner Python projects created while learning Python and building projects for GitHub.
