@@ -1,28 +1,66 @@
-menu= {
-     'pizza': 40,
-     'pasta':60,
-     'burger':40,
-     'salad':50,
-     'coffee':80,
-     'tea':30,   
+menu = {
+    'pizza': 40,
+    'pasta': 60,
+    'burger': 40,
+    'salad': 50,
+    'coffee': 80,
+    'tea': 30
 }
-print("welcome to Riddhi's Restraurant")
-print("pizza:rs40\npasta:rs60\nburger:rs40\ncoffee:rs80\nsalad:rs50\ntea:30")
-order_total=0
-item_1=input("enter the name of item you want to order=")
-if item_1 in menu:
-    order_total+=menu[item_1]
-    print(f"yout item {item_1} has been added to your order ")
-else:
-    print(f"ordered item {item_1} is not available yet.")
-another_order= input("Do you want to add another item?(yes/no)")
-if another_order=="yes":
-    item_2=input("enter the name of second item=")
-    if item_2 in menu:
-     order_total+=menu[item_2]
-     print(f"Item{item_2}has been added to order")
+
+print("================================")
+print("   Welcome to Riddhi's Restaurant")
+print("================================")
+
+print("\n----- MENU -----")
+for item, price in menu.items():
+    print(f"{item.title():10} Rs.{price}")
+
+order = {}
+order_total = 0
+
+while True:
+    item = input("\nEnter the item you want to order: ").lower().strip()
+
+    if item in menu:
+        quantity = int(input("Enter quantity: "))
+
+        if item in order:
+            order[item] += quantity
+        else:
+            order[item] = quantity
+
+        item_total = menu[item] * quantity
+        order_total += item_total
+
+        print(f"{quantity} {item}(s) added to your order.")
+
     else:
-      print(f"ordered item{item_2}is not available!") 
-print(f"The total amount of items to pay is {order_total}")
+        print(f"Sorry, {item} is not available.")
+
+    another_order = input("Do you want to add another item? (yes/no): ").lower()
+
+    if another_order != "yes":
+        break
 
 
+# Bill
+print("\n==============================")
+print("          YOUR BILL")
+print("==============================")
+
+for item, quantity in order.items():
+    price = menu[item]
+    total = price * quantity
+    print(f"{item.title():10} x {quantity} = Rs.{total}")
+
+print("------------------------------")
+print(f"Subtotal: Rs.{order_total}")
+
+# GST
+gst = order_total * 0.05
+final_total = order_total + gst
+
+print(f"GST (5%): Rs.{gst:.2f}")
+print(f"Total: Rs.{final_total:.2f}")
+print("==============================")
+print("Thank you for visiting!")
