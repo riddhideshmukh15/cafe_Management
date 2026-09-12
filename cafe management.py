@@ -1,3 +1,4 @@
+
 menu = {
     'pizza': 40,
     'pasta': 60,
@@ -10,6 +11,12 @@ menu = {
 print("================================")
 print("   Welcome to Riddhi's Restaurant")
 print("================================")
+
+order_number = 1001
+table_number = input("Enter table number: ")
+
+print(f"\nOrder Number: {order_number}")
+print(f"Table Number: {table_number}")
 
 print("\n----- MENU -----")
 for item, price in menu.items():
@@ -47,6 +54,9 @@ while True:
 print("\n==============================")
 print("          YOUR BILL")
 print("==============================")
+print(f"Order Number : {order_number}")
+print(f"Table Number : {table_number}")
+print("------------------------------")
 
 for item, quantity in order.items():
     price = menu[item]
@@ -64,3 +74,4 @@ print(f"GST (5%): Rs.{gst:.2f}")
 print(f"Total: Rs.{final_total:.2f}")
 print("==============================")
 print("Thank you for visiting!")
+
