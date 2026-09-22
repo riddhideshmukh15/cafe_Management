@@ -5,16 +5,18 @@ menu = {
     'burger': 40,
     'salad': 50,
     'coffee': 80,
-    'tea': 30
+    'tea': 30,
+    'Avacado toast':80,
+    'icecream':60
 }
 
 print("================================")
-print("   Welcome to Riddhi's Restaurant")
+print("   Welcome to Riddhi's Cafe!")
 print("================================")
-
+customer_name=(input("Enter customer's name:"))
 order_number = 1001
 table_number = input("Enter table number: ")
-
+print(f"Customer Name:{customer_name}")
 print(f"\nOrder Number: {order_number}")
 print(f"Table Number: {table_number}")
 
@@ -49,14 +51,13 @@ while True:
     if another_order != "yes":
         break
 
-
-# Bill
 print("\n==============================")
 print("          YOUR BILL")
 print("==============================")
+print(f"Customer Name:{customer_name}")
 print(f"Order Number : {order_number}")
 print(f"Table Number : {table_number}")
-print("------------------------------")
+
 
 for item, quantity in order.items():
     price = menu[item]
@@ -65,13 +66,6 @@ for item, quantity in order.items():
 
 print("------------------------------")
 print(f"Subtotal: Rs.{order_total}")
-
-# GST
-gst = order_total * 0.05
-final_total = order_total + gst
-
-print(f"GST (5%): Rs.{gst:.2f}")
-print(f"Total: Rs.{final_total:.2f}")
-print("==============================")
-print("Thank you for visiting!")
-
+print(input("Enter the mode of payment(Upi/cash/card):"))
+print("Payment Successful!")
+print("Thanks For Using the Cafe Management system!")
