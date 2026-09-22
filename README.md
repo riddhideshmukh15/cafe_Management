@@ -1,29 +1,74 @@
-# Simple Banking System
+# ☕ Riddhi's Cafe
 
-A simple Python project that simulates basic banking operations.
+A simple **Python Cafe Management System** for taking customer orders and generating a bill.
 
-## Features
+## ✨ Features
 
-* Enter customer name
-* Create and verify PIN
-* Check balance
-* Deposit money
-* Withdraw money
-* Check insufficient balance
-* Exit the banking system
+* 👤 Enter customer name
+* 🪑 Enter table number
+* 🔢 Generate order number
+* 📋 Display cafe menu
+* 🛒 Add multiple food items
+* 🔢 Enter quantity for each item
+* 🧾 Generate a detailed bill
+* 💰 Calculate 5% GST
+* 💳 Enter payment method (Cash/UPI/Card)
+* ✅ Display payment successful message
+* 🚪 Exit the ordering system
 
-## Technologies Used
+## 📋 Cafe Menu
 
-* Python 3.x
+| Item   | Price |
+| ------ | ----: |
+| Pizza  |   ₹40 |
+| Pasta  |   ₹60 |
+| Burger |   ₹40 |
+| Salad  |   ₹50 |
+| Coffee |   ₹80 |
+| Tea    |   ₹30 |
 
-## How to Run
+## 🛠️ Technologies Used
 
-Open the project folder in Command Prompt and run:
+* Python
+* Dictionaries
+* Loops
+* Conditional Statements
+* User Input
+* Basic Calculations
+
+## ▶️ How to Run
+
+Make sure Python is installed, then run:
 
 ```bash
-python banking_system.py
+python cafe.py
 ```
 
-## Author
+## 💡 Example
 
-Riddhi Deshmukh
+```text
+================================
+   Welcome to Riddhi's Cafe
+================================
+
+Enter customer name: Riddhi
+Enter table number: 5
+
+Pizza x 2 = Rs.80
+Burger x 1 = Rs.40
+
+Subtotal: Rs.120
+GST (5%): Rs.6.00
+Total: Rs.126.00
+
+Enter payment method: UPI
+Payment successful using UPI!
+
+Thank you for visiting Riddhi's Cafe!
+```
+
+## 👩‍💻 Author
+
+**Riddhi Deshmukh**
+
+Beginner Python Project 🚀
