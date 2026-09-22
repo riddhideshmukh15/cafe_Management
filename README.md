@@ -71,4 +71,3 @@ Thank you for visiting Riddhi's Cafe!
 
 **Riddhi Deshmukh**
 
-Beginner Python Project 🚀
